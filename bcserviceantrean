@@ -1,0 +1,147 @@
+<?php
+date_default_timezone_set('Asia/Jakarta');
+putenv('TZ=Asia/Jakarta');
+
+require_once __DIR__ . '/../function/function_klinik.php'; // koneksi & helper DB
+require_once __DIR__ . '/vendor/autoload.php';
+
+use LZCompressor\LZString;
+
+// ---------- Config BPJS ----------
+$cons_id    = '25685';
+$secret_key = '9hX4AEEB8C';
+$user_key   = 'a0e225428271c8e127fc2c539ff0192f';
+$url_add    = "https://apijkn-dev.bpjs-kesehatan.go.id/antreanfktp_dev/antrean/add";
+
+// ---------- Fungsi nomor antrean ----------
+function nextQueueNumber($kodePoli, $tanggal) {
+    // Hanya dummy nomor antrean, bisa diganti ambil dari tabel antrean_bpjs
+    return [
+        'angka' => 1,
+        'nomor' => 'A-1'
+    ];
+}
+
+// ---------- Service Loop ----------
+echo "=== Service Antrean BPJS siap dijalankan ===" . PHP_EOL;
+$first_run = true;
+
+while(true){
+    $now = new DateTime('now', new DateTimeZone('Asia/Jakarta'));
+
+    // Jalankan jika pertama kali start atau jam tertentu (misal 07:00-17:00)
+    if($first_run || $now->format('H:i') >= '07:00' && $now->format('H:i') <= '17:00'){
+        $first_run = false;
+
+        $tanggal_awal  = $now->format("Y-m-d");
+        $tanggal_akhir = $tanggal_awal;
+
+        echo "Mulai ambil pasien BPJS tanggal $tanggal_awal ..." . PHP_EOL;
+
+        // ---------- Query pasien BPJS ----------
+        $query = "
+        SELECT *
+        FROM (
+            SELECT
+                rp.no_reg,
+                ps.nm_pasien,
+                ps.no_tlp as nohp,
+                ps.no_rkm_medis,
+                rp.no_rawat,
+                ps.no_peserta,
+                ps.no_ktp,
+                rp.kd_poli,
+                pk.nm_poli,
+                rp.tgl_registrasi AS tgl_periksa,
+                d.kd_dokter,
+                d.nm_dokter,
+                CONCAT(j.jam_mulai,'-',j.jam_selesai) AS jam_praktek,
+                pj.png_jawab,
+                ROW_NUMBER() OVER(PARTITION BY rp.no_rawat ORDER BY j.jam_mulai) AS rn
+            FROM reg_periksa rp
+            INNER JOIN poliklinik pk ON rp.kd_poli = pk.kd_poli
+            INNER JOIN penjab pj ON rp.kd_pj = pj.kd_pj
+            INNER JOIN pasien ps ON rp.no_rkm_medis = ps.no_rkm_medis
+            INNER JOIN dokter d ON rp.kd_dokter = d.kd_dokter
+            INNER JOIN jadwal j ON rp.kd_dokter = j.kd_dokter
+            WHERE rp.kd_poli IN ('001','U0010')
+            AND rp.kd_pj = 'bpj'
+            AND rp.tgl_registrasi BETWEEN ? AND ?
+        ) AS t
+        WHERE rn = 1;
+        ";
+
+        $cari_pasien = queryPrepared($query, [$tanggal_awal, $tanggal_akhir]);
+
+        if(empty($cari_pasien)){
+            echo "Tidak ada pasien BPJS hari ini." . PHP_EOL;
+        } else {
+            foreach($cari_pasien as $data){
+                // ---------- Nomor antrean ----------
+                $queue = nextQueueNumber($data['kd_poli'], $data['tgl_periksa']);
+
+                // ---------- Format jam praktek ----------
+                list($mulai, $selesai) = explode('-', $data['jam_praktek']);
+                $jam_praktek = date('H:i', strtotime($mulai)) . '-' . date('H:i', strtotime($selesai));
+
+                // ---------- Payload ----------
+                $payload = [
+                    "nomorkartu"     => $data['no_peserta'],
+                    "nik"            => $data['no_ktp'],
+                    "nohp"           => $data['nohp'],
+                    "kodepoli"       => $data['kd_poli'],
+                    "namapoli"       => $data['nm_poli'],
+                    "norm"           => $data['no_rkm_medis'],
+                    "tanggalperiksa" => $data['tgl_periksa'],
+                    "kodedokter"     => $data['kd_dokter'],
+                    "namadokter"     => $data['nm_dokter'],
+                    "jampraktek"     => $jam_praktek,
+                    "nomorantrean"   => $queue['nomor'],
+                    "angkaantrean"   => $queue['angka'],
+                    "keterangan"     => ""
+                ];
+
+                // ---------- Header ----------
+                $timestamp = time();
+                $signature = base64_encode(hash_hmac('sha256', $cons_id . "&" . $timestamp, $secret_key, true));
+                $auth      = "Basic ".base64_encode("tester.stmartina:Bpjs123**:095");
+
+                $headers = [
+                    "Content-Type: application/json",
+                    "X-cons-id: $cons_id",
+                    "X-timestamp: $timestamp",
+                    "X-signature: $signature",
+                    "user_key: $user_key",
+                    "X-authorization: $auth"
+                ];
+
+                // ---------- Var_dump debugging ----------
+                echo "Mengirim antrean: " . $data['nm_pasien'] . " => " . json_encode($payload) . PHP_EOL;
+
+                // ---------- Kirim ke BPJS ----------
+                $ch = curl_init($url_add);
+                curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                curl_setopt($ch, CURLOPT_POST, true);
+                curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($payload));
+                $response = curl_exec($ch);
+                if(curl_errno($ch)){
+                    echo "Curl error: ".curl_error($ch) . PHP_EOL;
+                } else {
+                    echo "Response BPJS: " . $response . PHP_EOL;
+                }
+                curl_close($ch);
+
+                // Tunggu 1 detik sebelum kirim pasien berikutnya
+                sleep(1);
+            }
+        }
+
+        echo "=== Proses Antrean BPJS selesai ===" . PHP_EOL;
+
+        // Tunggu 60 detik sebelum cek lagi
+        sleep(5);
+    } else {
+        sleep(5);
+    }
+}

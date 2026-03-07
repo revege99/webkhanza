@@ -1,0 +1,896 @@
+[2026-01-28 09:22:11] === Service Antrean BPJS siap dijalankan ===
+[2026-01-28 09:22:11] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:22:12] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:22:18] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:22:18] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:22:35] === Service Antrean BPJS siap dijalankan ===
+[2026-01-28 09:22:35] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:22:35] PAYLOAD BPJS (RAW):
+[2026-01-28 09:22:35] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:22:35] ======================================
+[2026-01-28 09:22:35] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:27:24] === Service Antrean BPJS siap dijalankan ===
+[2026-01-28 09:27:24] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:27:24] PAYLOAD BPJS (RAW):
+[2026-01-28 09:27:24] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:27:24] ======================================
+[2026-01-28 09:27:24] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:27:30] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:27:30] PAYLOAD BPJS (RAW):
+[2026-01-28 09:27:30] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:27:30] ======================================
+[2026-01-28 09:27:31] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:27:37] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:27:37] PAYLOAD BPJS (RAW):
+[2026-01-28 09:27:37] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:27:37] ======================================
+[2026-01-28 09:27:37] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:27:43] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:27:43] PAYLOAD BPJS (RAW):
+[2026-01-28 09:27:43] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:27:43] ======================================
+[2026-01-28 09:27:43] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:27:49] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:27:49] PAYLOAD BPJS (RAW):
+[2026-01-28 09:27:49] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:27:49] ======================================
+[2026-01-28 09:27:50] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:27:56] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:27:56] PAYLOAD BPJS (RAW):
+[2026-01-28 09:27:56] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:27:56] ======================================
+[2026-01-28 09:27:56] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:28:02] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:28:02] PAYLOAD BPJS (RAW):
+[2026-01-28 09:28:02] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:28:02] ======================================
+[2026-01-28 09:28:02] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:28:05] === Service Antrean BPJS siap dijalankan ===
+[2026-01-28 09:28:05] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:28:05] PAYLOAD BPJS (RAW):
+[2026-01-28 09:28:05] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:03",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:28:05] ======================================
+[2026-01-28 09:28:06] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:28:08] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:28:08] PAYLOAD BPJS (RAW):
+[2026-01-28 09:28:08] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:28:08] ======================================
+[2026-01-28 09:28:09] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:28:12] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:28:12] PAYLOAD BPJS (RAW):
+[2026-01-28 09:28:12] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:03",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:28:12] ======================================
+[2026-01-28 09:28:12] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:28:15] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:28:15] PAYLOAD BPJS (RAW):
+[2026-01-28 09:28:15] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:28:15] ======================================
+[2026-01-28 09:28:15] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:28:21] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:28:21] PAYLOAD BPJS (RAW):
+[2026-01-28 09:28:21] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:28:21] ======================================
+[2026-01-28 09:28:21] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:28:27] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:28:27] PAYLOAD BPJS (RAW):
+[2026-01-28 09:28:27] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:28:27] ======================================
+[2026-01-28 09:28:28] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:28:34] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:28:34] PAYLOAD BPJS (RAW):
+[2026-01-28 09:28:34] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:28:34] ======================================
+[2026-01-28 09:28:34] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:28:40] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:28:40] PAYLOAD BPJS (RAW):
+[2026-01-28 09:28:40] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:28:40] ======================================
+[2026-01-28 09:28:40] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:28:46] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:28:46] PAYLOAD BPJS (RAW):
+[2026-01-28 09:28:46] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:28:46] ======================================
+[2026-01-28 09:28:47] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:28:53] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:28:53] PAYLOAD BPJS (RAW):
+[2026-01-28 09:28:53] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:28:53] ======================================
+[2026-01-28 09:28:53] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:28:59] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:28:59] PAYLOAD BPJS (RAW):
+[2026-01-28 09:28:59] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:28:59] ======================================
+[2026-01-28 09:28:59] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:29:05] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:29:05] PAYLOAD BPJS (RAW):
+[2026-01-28 09:29:05] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:29:05] ======================================
+[2026-01-28 09:29:06] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:29:12] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:29:12] PAYLOAD BPJS (RAW):
+[2026-01-28 09:29:12] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:29:12] ======================================
+[2026-01-28 09:29:12] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:29:18] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:29:18] PAYLOAD BPJS (RAW):
+[2026-01-28 09:29:18] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:29:18] ======================================
+[2026-01-28 09:29:18] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:29:24] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:29:24] PAYLOAD BPJS (RAW):
+[2026-01-28 09:29:24] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:29:24] ======================================
+[2026-01-28 09:29:25] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:29:31] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:29:31] PAYLOAD BPJS (RAW):
+[2026-01-28 09:29:31] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:29:31] ======================================
+[2026-01-28 09:29:31] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:29:37] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:29:37] PAYLOAD BPJS (RAW):
+[2026-01-28 09:29:37] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:29:37] ======================================
+[2026-01-28 09:29:37] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:29:43] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:29:43] PAYLOAD BPJS (RAW):
+[2026-01-28 09:29:43] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:29:43] ======================================
+[2026-01-28 09:29:44] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:29:50] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:29:50] PAYLOAD BPJS (RAW):
+[2026-01-28 09:29:50] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:29:50] ======================================
+[2026-01-28 09:29:50] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:29:56] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:29:56] PAYLOAD BPJS (RAW):
+[2026-01-28 09:29:56] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:29:56] ======================================
+[2026-01-28 09:29:56] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:30:02] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:30:02] PAYLOAD BPJS (RAW):
+[2026-01-28 09:30:02] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:30:02] ======================================
+[2026-01-28 09:30:03] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:30:09] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:30:09] PAYLOAD BPJS (RAW):
+[2026-01-28 09:30:09] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:30:09] ======================================
+[2026-01-28 09:30:09] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:30:15] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:30:15] PAYLOAD BPJS (RAW):
+[2026-01-28 09:30:15] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:30:15] ======================================
+[2026-01-28 09:30:15] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:30:21] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:30:21] PAYLOAD BPJS (RAW):
+[2026-01-28 09:30:21] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:30:21] ======================================
+[2026-01-28 09:30:22] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:30:28] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:30:28] PAYLOAD BPJS (RAW):
+[2026-01-28 09:30:28] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:30:28] ======================================
+[2026-01-28 09:30:28] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:30:34] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:30:34] PAYLOAD BPJS (RAW):
+[2026-01-28 09:30:34] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:30:34] ======================================
+[2026-01-28 09:30:34] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:30:40] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:30:40] PAYLOAD BPJS (RAW):
+[2026-01-28 09:30:40] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:30:40] ======================================
+[2026-01-28 09:30:41] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:30:47] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:30:47] PAYLOAD BPJS (RAW):
+[2026-01-28 09:30:47] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:30:47] ======================================
+[2026-01-28 09:30:47] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:30:53] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:30:53] PAYLOAD BPJS (RAW):
+[2026-01-28 09:30:53] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:30:53] ======================================
+[2026-01-28 09:30:53] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:30:59] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:30:59] PAYLOAD BPJS (RAW):
+[2026-01-28 09:30:59] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:30:59] ======================================
+[2026-01-28 09:31:00] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:31:06] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:31:06] PAYLOAD BPJS (RAW):
+[2026-01-28 09:31:06] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:31:06] ======================================
+[2026-01-28 09:31:06] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:31:12] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:31:12] PAYLOAD BPJS (RAW):
+[2026-01-28 09:31:12] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:31:12] ======================================
+[2026-01-28 09:31:12] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:31:18] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:31:18] PAYLOAD BPJS (RAW):
+[2026-01-28 09:31:18] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:31:18] ======================================
+[2026-01-28 09:31:18] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:31:24] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:31:25] PAYLOAD BPJS (RAW):
+[2026-01-28 09:31:25] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:31:25] ======================================
+[2026-01-28 09:31:25] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:31:31] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:31:31] PAYLOAD BPJS (RAW):
+[2026-01-28 09:31:31] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:31:31] ======================================
+[2026-01-28 09:31:31] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:31:37] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:31:37] PAYLOAD BPJS (RAW):
+[2026-01-28 09:31:37] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:31:37] ======================================
+[2026-01-28 09:31:37] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:31:42] === Service Antrean BPJS siap dijalankan ===
+[2026-01-28 09:31:42] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:31:42] Tidak ada pasien BPJS baru hari ini.
+[2026-01-28 09:31:47] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:31:47] Tidak ada pasien BPJS baru hari ini.
+[2026-01-28 09:32:04] === Service Antrean BPJS siap dijalankan ===
+[2026-01-28 09:32:04] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:32:04] Tidak ada pasien BPJS baru hari ini.
+[2026-01-28 09:45:30] === Service Antrean BPJS siap dijalankan ===
+[2026-01-28 09:45:30] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:45:30] Tidak ada pasien BPJS baru hari ini.
+[2026-01-28 09:45:35] Cek pasien BPJS tanggal 2026-01-28 ...
+[2026-01-28 09:45:35] Tidak ada pasien BPJS baru hari ini.
+[2026-01-28 09:49:30] === Service Antrean BPJS siap dijalankan ===
+[2026-01-28 09:49:30] Cek pasien BPJS tanggal 2026-01-28 (RABU) ...
+[2026-01-28 09:49:30] PAYLOAD BPJS (RAW):
+[2026-01-28 09:49:30] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:03",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:49:30] ======================================
+[2026-01-28 09:49:31] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-01-28 09:49:37] Cek pasien BPJS tanggal 2026-01-28 (RABU) ...
+[2026-01-28 09:49:37] PAYLOAD BPJS (RAW):
+[2026-01-28 09:49:37] {
+    "nomorkartu": "0002081694609",
+    "nik": "2171024606789017",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "015271",
+    "tanggalperiksa": "2026-01-28",
+    "kodedokter": "74137",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-11:03",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-01-28 09:49:37] ======================================
+[2026-01-28 09:49:37] Pasien dikirim: HOLILA => Status: gagal (201) | Pesan: Jadwal dokter tidak ditemukan

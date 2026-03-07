@@ -1,0 +1,185 @@
+body{
+    font-size: 1.2rem;
+    font-family:'Quicksand', sans-serif;
+    background-color: #F0F1F4;
+   
+}
+
+
+
+#navbar{
+	background-color: darkred;
+	float: left;
+}
+
+.container{
+	position: relative;
+	padding-right: 3rem;
+}
+.btn-group{
+
+	z-index: 3;
+	right: -1.5rem;
+
+
+}
+
+.container h3{
+	color: grey;
+	font-size: 1.5rem;
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+.container form{
+	margin-left: 3rem;
+}
+
+.container .input-group{
+	margin-left: 4rem;
+}
+
+.export #export{
+	font-size: 0.7rem;
+	height: 1.8rem;
+	font-weight : bold;
+}
+
+ .btn-group #record{
+	height: 1.8rem;
+	background-color: darkred;
+	margin-left: 1rem;
+	display: flex;
+	width: 7rem;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	
+
+
+}
+
+#record p{
+	font-size: 0.7rem;
+	font-family: 'Quicksand', sans-serif;
+	justify-content : center;
+	align-items : center;
+	color :white;
+	margin-top : 1rem;
+	font-weight : bold;
+	
+	
+/*	box-shadow:0px 2px 3px grey ;*/
+
+
+
+}
+
+
+.content{
+	position: relative;
+	margin-left: 15rem;
+	padding-right: 2rem;
+}
+.content .navbar{
+	margin-left: 15rem;
+}
+
+.content .navbar .container{
+	margin-left: 0px;
+}
+#data{
+	margin-top: 5rem;
+	justify-content: center;
+	align-items: center;
+	margin-left: 1rem;
+	background-color: white;
+	box-shadow: 0px 0px 15px white;
+	
+}
+
+#table-container{
+	overflow-y: auto;
+	max-height: 75vh;
+	overflow-x: auto;
+	min-width: 100vh;
+}
+
+.navbar{
+	background-color: white;
+	box-shadow: 0px 3px 20px black;
+	height: 4rem;
+}
+
+.container-fluid table{
+	border: 1px solid black;
+
+}
+
+.content .input-group{
+	width: auto;
+	margin-left: 10px;
+/*	background-color: darkred;*/
+	z-index: 999;
+}
+
+	.input-group .status{
+           /* appearance: none; 
+        -webkit-appearance: none;
+        -moz-appearance: none;*/
+        font-size: 10px;
+        padding-right: 10px;
+        border: 0.5px solid #CCD0D4;
+        border-radius: 1rem;
+        background-color: transparent;
+        }
+.content .input-group input::placeholder{
+	font-size: 0.8rem;
+}
+
+.container-fluid table tr th{
+	border: 1px solid black;
+	text-align: center;
+	font-weight: bold;
+	background-color: grey;
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+.container-fluid table tr td{
+	border: 1px solid black;
+	font-size: 10px;
+	white-space: nowrap;
+	height: -0.5rem;
+}
+
+#container-fitur{
+	width: 100%;
+	height: 50px;
+/*	margin-bottom: 10px;*/
+	background-color: f;
+	box-shadow:0px 2px 8px grey ;
+	position: fixed;
+	bottom: 0;
+
+}
+
+
+
+#container-fitur .input-group input,
+#container-fitur button,
+#container-fitur .input-group .input-group-text{
+	font-size: 10px;
+}
+
+
+#fitur{
+/*	position: fixed;*/
+margin-top: 1.3rem;
+align-items: center;
+
+}
+
+  #data #table-container #registrasi tbody td{
+	font-size: 12px;
+}

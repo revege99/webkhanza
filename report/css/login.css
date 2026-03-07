@@ -1,0 +1,101 @@
+/*[class^=col]{border:1px solid red;}*/
+
+#template{
+  margin-top: 1em;
+}
+
+p{
+  padding: 1px 2px 1px;
+  font-size: 2em;
+  width: 25%;
+  border-radius: 12px 50px 0px 00px;
+  
+}
+.Ketentuan{
+  margin-top: -20px
+}
+.daftar-regis{box-shadow: 0px 0px 5px 1px   #A9A9A9;
+ 
+  margin-top: 30px;
+  width: 85%;
+  
+  box-sizing: border-box;
+  border-radius: 10px;
+  
+}
+
+#btn-outline-success{
+    margin-right: 10px; width: 150px; 
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+
+.daftar-regis .input{position: relative;
+        width:98%;
+        margin-bottom: 10px;
+      }
+
+.daftar-regis .input input{height: 40px;
+  width: 100%;
+  font-size: 18px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 0.5px solid black;
+    padding-left: 10px;}
+ 
+ .input span{position: absolute;
+        top: 9px;
+        left: 10px;
+
+        text-transform:capitalize;
+        background-color:  #fff;
+        transition: 0.5s;
+}
+
+#row{
+border: 1px ridge gray;
+}
+
+#pil{ 
+  height: 4em
+}
+
+#pil hr{
+  border: 2px ridge black;
+  width: 100%;
+  margin-top: 0.2em
+}
+
+#pil button{
+  border: none;
+  width: 100%;
+}
+
+#pil button a{
+  text-decoration: none;
+}
+
+  
+.daftar-regis .input input:focus~ span,
+.daftar-regis .input input:valid~span{
+          background-color: orange;
+          padding: 1px;
+          border-radius: 10%;
+          top: -28px;
+          left: 16px;
+          font-size: 20px;
+        
+         }
+
+
+.daftar-regis .input input[type="submit"]{
+  cursor: pointer;
+  border-radius: 20px;
+width: 70%;
+font-weight: bold;
+
+}
+
+.submit{padding-top: 20px;}
+

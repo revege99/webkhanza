@@ -1,0 +1,120 @@
+body{
+	font-family: lucia Console;
+}
+/*[class^=col]{border:1px solid red;}
+*/
+.img{
+	border-radius: 50%;
+}
+
+.row-expand-lg{
+	height: auto; 
+	margin-top: 8em; 
+}
+
+
+#second{
+	height: 18em;
+}
+
+#second a{
+	padding: 10px; 
+	border-radius: 15px 15px 15px 15px;
+	
+}
+
+#second li{
+	margin-bottom: 1.5em;
+	margin-right: 0.5px
+}
+
+#second li a{
+	text-decoration: none;
+}
+
+
+
+.card{
+	width: 100%;
+	box-shadow: 0px 0px 6px 1px gray;
+}
+
+#card-group{
+	margin-left: 10%;
+}
+
+.card img{
+	cursor: pointer;
+	height: 12em;
+}
+
+.card-body{
+	height: 10em
+}
+
+.card-body h5{
+	margin-top: -10px;
+	margin-left: -10px;
+}
+
+.card-body p{
+	margin-top: -12px
+}
+
+.card-body span{
+	bottom: 8em;
+	right: 2em;
+	position: absolute;
+}
+
+.harga{
+	position: absolute;
+	bottom: 4.8em;
+}
+
+.card-footer {
+	margin-top: -18px;
+}
+
+.card-footer a{
+	width: 100%; 
+	margin-top: 2px;
+}
+
+.card:hover{
+	box-shadow: 0px 0px 10px 1px orange;
+	
+}
+#btn{
+	width: 60%;
+	margin-left: auto;
+	margin-top: -20px
+}
+
+#btn-primary{
+	width:  37%;
+	margin-left: 1%;
+	margin-top: -20px
+}
+
+.card-footer small{
+	margin-top: -10px;
+	margin-left: -12px;
+}
+
+.card-title{
+	color: blue;
+}
+h4{
+	font-family:comic sans MS;
+}
+
+
+
+
+hr{
+	width: 100%;
+	border: 1px ridge   white;
+
+}
+

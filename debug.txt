@@ -1,0 +1,17 @@
+timestamp: 1753455263
+signature: aCaUQHmFuaVleaXPBvHczxaYRM/0UfjxdzTP0Jk7SeE=
+authorization: dGVzdGVyLnN0bWFydGluYTpCUGpzMTIzKio6MDk1
+
+BODY:
+{"kdObatSK":0,"noKunjungan":"0030B0110725Y000018","racikan":false,"kdRacikan":null,"obatDPHO":true,"kdObat":"130102305","signa1":3,"signa2":1,"jmlObat":10,"jmlPermintaan":10,"nmObatNonDPHO":""}
+
+HEADERS:
+Array
+(
+    [0] => Content-Type: application/json
+    [1] => X-cons-id: 25685
+    [2] => X-timestamp: 1753455263
+    [3] => X-signature: aCaUQHmFuaVleaXPBvHczxaYRM/0UfjxdzTP0Jk7SeE=
+    [4] => X-authorization: Basic dGVzdGVyLnN0bWFydGluYTpCUGpzMTIzKio6MDk1
+    [5] => user_key: a0e225428271c8e127fc2c539ff0192f
+)

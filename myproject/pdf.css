@@ -1,0 +1,148 @@
+ body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 20px;
+            width: 800px; /* Menyesuaikan lebar tampilan */
+            margin: auto; /* Membuatnya berada di tengah */
+            background-color: #E5E5E5;
+        }
+        h2, h3 {
+            text-align: center;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+        }
+        .header h2{
+            font-size: 1.2rem;
+          
+          font-optical-sizing: auto;
+          font-weight: bold;
+          font-style: normal;
+
+        }
+        .header h4{
+            font-size: 1rem;
+            font-family: "Times New Roman", Times, serif;
+          font-optical-sizing: auto;
+          font-weight: bolder;
+          font-style: normal;
+          margin: 2px 0; /* Mengurangi jarak antar elemen h4 */
+            line-height: 1; /* Mengurangi spasi antar baris */
+
+        }
+
+        .header h4 span{
+            color: #0000FF;
+            text-decoration: underline;
+        }
+
+        .header::after{
+            content: '';
+           display: block;
+            position: absolute;
+            width: calc(100%);
+            
+            height: 2px;
+            background: black;
+            z-index: 9999;
+        }
+        .header .logo {
+            width: 80px;
+            position: absolute;
+            left: 2rem;
+            margin-top: 1.2rem;
+        }
+        .header .paripurna {
+            width: 80px;
+            position: absolute;
+            right: 2rem;
+            margin-top: 1rem;
+        }
+        table {
+            width: 100%; /* Menyesuaikan ukuran tabel agar lebih kecil */
+            border-collapse: collapse;
+            margin: 20px auto; /* Memusatkan tabel */
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .content{
+            background-color: #FFFFFF;
+            padding: 2rem;
+        }
+
+        
+
+        #row{
+            border: 1px solid black;
+            position: relative;
+        }
+
+        #row::after{
+            content: '';
+           display: block;
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            background: black;
+            z-index: 9999;
+            margin-left: 50%;
+        }
+        }
+
+        .col-md-6{
+/*            border: 1px solid black;*/
+            display: flex;
+        }
+
+        #row h3{
+            font-size: 1rem;
+            padding: 5px;
+        }
+
+        #row h4{
+            font-size: 0.8rem;
+        }
+
+        .row {
+            display: flex;
+            align-items: center; /* Posisikan elemen di tengah secara vertikal */
+            border: 1px solid black;
+        }
+
+        .col-md-6 {
+            flex: 1; /* Agar kedua kolom memiliki ukuran yang sama */
+            padding: 10px;
+        }
+
+        .patient-info {
+            display: flex;
+            flex-direction: column; /* Susun elemen ke bawah */
+            justify-content: center; /* Posisikan di tengah secara vertikal */
+            text-align: left;
+        }
+
+        .patient-info h4 {
+
+            margin: 2px 0; /* Mengurangi jarak antar elemen h4 */
+            line-height: 1.2; /* Mengurangi spasi antar baris */
+        }
+
+        th{
+            text-align: center;
+
+        }
+
+
+

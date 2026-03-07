@@ -1,0 +1,19 @@
+[2026-01-19 19:14:08] === Service Antrean BPJS siap dijalankan ===
+[2026-01-19 19:14:08] Cek pasien BPJS tanggal 2026-01-19 ...
+[2026-01-19 19:14:37] === Service Antrean BPJS siap dijalankan ===
+[2026-01-19 19:14:37] Cek pasien BPJS tanggal 2026-01-19 ...
+[2026-01-19 19:17:27] === Service Antrean BPJS siap dijalankan ===
+[2026-01-19 19:17:27] Cek pasien BPJS tanggal 2026-01-19 ...
+[2026-01-19 21:04:05] === Service Antrean BPJS siap dijalankan ===
+[2026-01-19 21:04:13] === Service Antrean BPJS siap dijalankan ===
+[2026-01-19 21:04:19] === Service Antrean BPJS siap dijalankan ===
+[2026-01-19 21:06:15] === Service Antrean BPJS siap dijalankan ===
+[2026-01-19 21:06:15] Cek pasien BPJS tanggal 2026-01-19 ...
+[2026-01-19 21:10:40] === Service Antrean BPJS siap dijalankan ===
+[2026-01-19 21:10:40] Cek pasien BPJS tanggal 2026-01-19 ...
+[2026-01-19 21:10:40] Pasien dikirim: PIODA SIREGAR  => Status: gagal (201) | Pesan: NIK tidak valid, silahkan periksa kembali NIK anda
+[2026-01-19 21:10:41] Pasien dikirim: PARLINDUNGAN HUTAGALUNG => Status: gagal (201) | Pesan: Peserta sudah terdaftar di poli tersebut pada hari ini
+[2026-01-19 21:10:43] Pasien dikirim: JOKKAS SIMANJUNTAK => Status: gagal (201) | Pesan: Peserta sudah terdaftar di poli tersebut pada hari ini
+[2026-01-19 21:10:44] Pasien dikirim: TAULER  MANALU => Status: gagal (201) | Pesan: Peserta sudah terdaftar di poli tersebut pada hari ini
+[2026-01-19 21:10:46] Pasien dikirim: MARTINA TIOMAN SITANGGANG => Status: gagal (201) | Pesan: Peserta sudah terdaftar di poli tersebut pada hari ini
+[2026-01-19 21:10:47] Pasien dikirim: GULOPONG SIMANULLANG. => Status: gagal (201) | Pesan: nomor kartu tidak valid, silahkan periksa kembali nomor kartu

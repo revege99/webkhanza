@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Pemeriksaan Rawat Inap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2, h3 {
+            text-align: center;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 80px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Logo Rumah Sakit">
+        <h2>RUMAH SAKIT UMUM SINT LUCIA</h2>
+        <p>Jl. Sisingamangaraja No. 171/173, Kel. Pasar Siborongborong, Kec. Siborongborong, Kab. Tapanuli Utara</p>
+        <p>Hp: 085261902900 | E-mail: rssintlucia@gmail.com</p>
+    </div>
+
+    <h3>CATATAN PERKEMBANGAN PASIEN TERINTEGRASI RAWAT INAP</h3>
+    <p><strong>No RM:</strong> 02-37-23</p>
+    <p><strong>Nama:</strong> Tionarida Purba</p>
+    <p><strong>Tgl Lahir/Umur:</strong></p>
+    
+    <?php
+    $koneksi = new mysqli("localhost", "root", "", "sik");
+    if ($koneksi->connect_error) {
+        die("Koneksi gagal: " . $koneksi->connect_error);
+    }
+
+    $no_rawat = isset($_GET['no_rawat']) ? $_GET['no_rawat'] : '';
+    $tanggal_awal = isset($_GET['tanggal_awal']) ? $_GET['tanggal_awal'] : '';
+    $tanggal_akhir = isset($_GET['tanggal_akhir']) ? $_GET['tanggal_akhir'] : '';
+    $nik_dokter = isset($_GET['nik_dokter']) ? $_GET['nik_dokter'] : '';
+
+    $query = "SELECT pemeriksaan_ranap.no_rawat, reg_periksa.no_rkm_medis, pasien.nm_pasien, pemeriksaan_ranap.tgl_perawatan, 
+        pemeriksaan_ranap.jam_rawat, pegawai.nama, pemeriksaan_ranap.keluhan, pemeriksaan_ranap.pemeriksaan, pemeriksaan_ranap.penilaian, pemeriksaan_ranap.rtl, pemeriksaan_ranap.instruksi 
+        FROM pemeriksaan_ranap
+        LEFT JOIN reg_periksa ON pemeriksaan_ranap.no_rawat = reg_periksa.no_rawat
+        LEFT JOIN pasien ON reg_periksa.no_rkm_medis = pasien.no_rkm_medis
+        LEFT JOIN kamar_inap ON reg_periksa.no_rawat = kamar_inap.no_rawat
+        LEFT JOIN pegawai ON pemeriksaan_ranap.nip = pegawai.nik  
+        WHERE pemeriksaan_ranap.no_rawat = '$no_rawat'
+        AND kamar_inap.tgl_masuk BETWEEN '$tanggal_awal' AND '$tanggal_akhir' 
+        AND pemeriksaan_ranap.nip = '$nik_dokter'";
+
+    $result = $koneksi->query($query);
+
+    if ($result->num_rows > 0) {
+        echo "<table>
+                <tr>
+                    <th>Tgl/Jam</th>
+                    <th>Profesional Pemberi Asuhan</th>
+                    <th>Hasil Asesmen Pasien dan Pemberian Pelayanan</th>
+                    <th>Instruksi PPA Termasuk Pasca Bedah</th>
+                </tr>";
+        while ($row = $result->fetch_assoc()) {
+            echo "<tr>
+                    <td>{$row['tgl_perawatan']}<br>{$row['jam_rawat']}</td>
+                    <td>{$row['nama']}</td>
+                    <td>
+                        <strong>S:</strong> {$row['keluhan']}<br>
+                        <strong>O:</strong> {$row['pemeriksaan']}<br>
+                        <strong>A:</strong> {$row['penilaian']}<br>
+                        <strong>P:</strong> {$row['rtl']}
+                    </td>
+                    <td>{$row['instruksi']}</td>
+                </tr>";
+        }
+        echo "</table>";
+    } else {
+        echo "<p>Tidak ada data yang ditemukan.</p>";
+    }
+    
+    $koneksi->close();
+    ?>
+</body>
+</html>

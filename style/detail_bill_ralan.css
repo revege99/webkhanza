@@ -1,0 +1,136 @@
+
+
+body{
+    font-size: 1rem;
+    font-family:'Quicksand', sans-serif;
+    background-color: #F0F1F4;
+    color: black;
+   
+}
+
+
+.container{
+	position: relative;
+	padding-right: 3rem;
+}
+.btn-group{
+
+	z-index: 3;
+	right: -1.5rem;
+
+
+}
+
+.container h3{
+	color: grey;
+	font-size: 1.5rem;
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+.container form{
+	margin-left: 3rem;
+}
+
+.container .input-group{
+	margin-left: 4rem;
+}
+
+.export #export{
+	font-size: 0.7rem;
+	height: 1.8rem;
+	font-weight : bold;
+}
+
+ .btn-group #record{
+	height: 1.8rem;
+/*	background-color: darkred;*/
+	margin-left: 1rem;
+	display: flex;
+	width: 7rem;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	
+
+
+}
+
+#record p{
+	font-size: 0.7rem;
+	font-family: 'Quicksand', sans-serif;
+	justify-content : center;
+	align-items : center;
+	color :white;
+	margin-top : 1rem;
+	font-weight : bold;
+	
+}
+
+
+.content{
+	position: relative;
+	margin-left: 12rem;
+	padding-right: 2rem;
+}
+.content .navbar{
+	margin-left: 12rem;
+}
+#data{
+	margin-top: 5rem;
+	justify-content: center;
+	align-items: center;
+	margin-left: 1rem;
+	background-color: white;
+	box-shadow: 0px 0px 15px white;
+	
+}
+
+#table-container{
+	overflow-y: auto;
+	max-height: 75vh;
+	overflow-x: auto;
+	min-width: 100vh;
+}
+
+.navbar{
+	background-color: white;
+	box-shadow: 0px 3px 20px black;
+	height: 4rem;
+}
+
+.container-fluid table{
+	border: 1px solid black;
+
+}
+
+.content .input-group{
+	width: auto;
+	margin-left: 10px;
+/*	background-color: darkred;*/
+	z-index: 999;
+}
+
+.data{
+	margin-left: 1rem	;
+	margin-top: 5rem;
+/*	background-color: darkred;*/
+	font-size: 18px;
+	color: black;
+}
+
+.data table tbody tr td {
+	font-weight: bold;
+/*	background-color: red;*/
+
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,639 @@
+[2026-02-09 20:24:42] === Service Antrean BPJS siap dijalankan ===
+[2026-02-09 20:24:42] Cek pasien BPJS tanggal 2026-02-09 (SENIN) ...
+[2026-02-09 14:03:09] === Service Antrean BPJS siap dijalankan ===
+[2026-02-09 14:03:09] Cek pasien BPJS tanggal 2026-02-09 (SENIN) ...
+[2026-02-09 14:03:09] PAYLOAD BPJS (RAW):
+[2026-02-09 14:03:09] {
+    "nomorkartu": "0002022983605",
+    "nik": "1212010902990002",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602251616",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-02-09 14:03:09] ======================================
+[2026-02-09 14:03:09] Pasien dikirim: PUTRI WAHYUNI => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:03:10] PAYLOAD BPJS (RAW):
+[2026-02-09 14:03:10] {
+    "nomorkartu": "0002071806197",
+    "nik": "9106013110490001",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602261619",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-002",
+    "angkaantrean": "002",
+    "keterangan": ""
+}
+[2026-02-09 14:03:10] ======================================
+[2026-02-09 14:03:11] Pasien dikirim: JANCE RUMBIAK => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:03:17] Cek pasien BPJS tanggal 2026-02-09 (SENIN) ...
+[2026-02-09 14:03:17] PAYLOAD BPJS (RAW):
+[2026-02-09 14:03:17] {
+    "nomorkartu": "0002022983605",
+    "nik": "1212010902990002",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602251616",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-02-09 14:03:17] ======================================
+[2026-02-09 14:03:17] Pasien dikirim: PUTRI WAHYUNI => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:03:18] PAYLOAD BPJS (RAW):
+[2026-02-09 14:03:18] {
+    "nomorkartu": "0002071806197",
+    "nik": "9106013110490001",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602261619",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-002",
+    "angkaantrean": "002",
+    "keterangan": ""
+}
+[2026-02-09 14:03:18] ======================================
+[2026-02-09 14:03:19] Pasien dikirim: JANCE RUMBIAK => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:03:25] Cek pasien BPJS tanggal 2026-02-09 (SENIN) ...
+[2026-02-09 14:03:25] PAYLOAD BPJS (RAW):
+[2026-02-09 14:03:25] {
+    "nomorkartu": "0002022983605",
+    "nik": "1212010902990002",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602251616",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-02-09 14:03:25] ======================================
+[2026-02-09 14:03:26] Pasien dikirim: PUTRI WAHYUNI => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:03:27] PAYLOAD BPJS (RAW):
+[2026-02-09 14:03:27] {
+    "nomorkartu": "0002071806197",
+    "nik": "9106013110490001",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602261619",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-002",
+    "angkaantrean": "002",
+    "keterangan": ""
+}
+[2026-02-09 14:03:27] ======================================
+[2026-02-09 14:03:27] Pasien dikirim: JANCE RUMBIAK => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:03:33] Cek pasien BPJS tanggal 2026-02-09 (SENIN) ...
+[2026-02-09 14:03:33] PAYLOAD BPJS (RAW):
+[2026-02-09 14:03:33] {
+    "nomorkartu": "0002022983605",
+    "nik": "1212010902990002",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602251616",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-02-09 14:03:33] ======================================
+[2026-02-09 14:03:34] Pasien dikirim: PUTRI WAHYUNI => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:03:35] PAYLOAD BPJS (RAW):
+[2026-02-09 14:03:35] {
+    "nomorkartu": "0002071806197",
+    "nik": "9106013110490001",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602261619",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-002",
+    "angkaantrean": "002",
+    "keterangan": ""
+}
+[2026-02-09 14:03:35] ======================================
+[2026-02-09 14:03:35] Pasien dikirim: JANCE RUMBIAK => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:03:41] Cek pasien BPJS tanggal 2026-02-09 (SENIN) ...
+[2026-02-09 14:03:41] PAYLOAD BPJS (RAW):
+[2026-02-09 14:03:41] {
+    "nomorkartu": "0002022983605",
+    "nik": "1212010902990002",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602251616",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-02-09 14:03:41] ======================================
+[2026-02-09 14:03:42] Pasien dikirim: PUTRI WAHYUNI => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:03:43] PAYLOAD BPJS (RAW):
+[2026-02-09 14:03:43] {
+    "nomorkartu": "0002071806197",
+    "nik": "9106013110490001",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602261619",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-002",
+    "angkaantrean": "002",
+    "keterangan": ""
+}
+[2026-02-09 14:03:43] ======================================
+[2026-02-09 14:03:44] Pasien dikirim: JANCE RUMBIAK => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:03:50] Cek pasien BPJS tanggal 2026-02-09 (SENIN) ...
+[2026-02-09 14:03:50] PAYLOAD BPJS (RAW):
+[2026-02-09 14:03:50] {
+    "nomorkartu": "0002022983605",
+    "nik": "1212010902990002",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602251616",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-02-09 14:03:50] ======================================
+[2026-02-09 14:03:51] Pasien dikirim: PUTRI WAHYUNI => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:03:52] PAYLOAD BPJS (RAW):
+[2026-02-09 14:03:52] {
+    "nomorkartu": "0002071806197",
+    "nik": "9106013110490001",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602261619",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-002",
+    "angkaantrean": "002",
+    "keterangan": ""
+}
+[2026-02-09 14:03:52] ======================================
+[2026-02-09 14:03:53] Pasien dikirim: JANCE RUMBIAK => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:03:59] Cek pasien BPJS tanggal 2026-02-09 (SENIN) ...
+[2026-02-09 14:03:59] PAYLOAD BPJS (RAW):
+[2026-02-09 14:03:59] {
+    "nomorkartu": "0002022983605",
+    "nik": "1212010902990002",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602251616",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-02-09 14:03:59] ======================================
+[2026-02-09 14:03:59] Pasien dikirim: PUTRI WAHYUNI => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:04:00] PAYLOAD BPJS (RAW):
+[2026-02-09 14:04:00] {
+    "nomorkartu": "0002071806197",
+    "nik": "9106013110490001",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602261619",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-002",
+    "angkaantrean": "002",
+    "keterangan": ""
+}
+[2026-02-09 14:04:00] ======================================
+[2026-02-09 14:04:01] Pasien dikirim: JANCE RUMBIAK => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:04:07] Cek pasien BPJS tanggal 2026-02-09 (SENIN) ...
+[2026-02-09 14:04:07] PAYLOAD BPJS (RAW):
+[2026-02-09 14:04:07] {
+    "nomorkartu": "0002022983605",
+    "nik": "1212010902990002",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602251616",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-02-09 14:04:07] ======================================
+[2026-02-09 14:04:08] Pasien dikirim: PUTRI WAHYUNI => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:04:09] PAYLOAD BPJS (RAW):
+[2026-02-09 14:04:09] {
+    "nomorkartu": "0002071806197",
+    "nik": "9106013110490001",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602261619",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-002",
+    "angkaantrean": "002",
+    "keterangan": ""
+}
+[2026-02-09 14:04:09] ======================================
+[2026-02-09 14:04:09] Pasien dikirim: JANCE RUMBIAK => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:04:15] Cek pasien BPJS tanggal 2026-02-09 (SENIN) ...
+[2026-02-09 14:04:15] PAYLOAD BPJS (RAW):
+[2026-02-09 14:04:15] {
+    "nomorkartu": "0002022983605",
+    "nik": "1212010902990002",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602251616",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-02-09 14:04:15] ======================================
+[2026-02-09 14:04:16] Pasien dikirim: PUTRI WAHYUNI => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:04:17] PAYLOAD BPJS (RAW):
+[2026-02-09 14:04:17] {
+    "nomorkartu": "0002071806197",
+    "nik": "9106013110490001",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602261619",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-002",
+    "angkaantrean": "002",
+    "keterangan": ""
+}
+[2026-02-09 14:04:17] ======================================
+[2026-02-09 14:04:18] Pasien dikirim: JANCE RUMBIAK => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:04:24] Cek pasien BPJS tanggal 2026-02-09 (SENIN) ...
+[2026-02-09 14:04:24] PAYLOAD BPJS (RAW):
+[2026-02-09 14:04:24] {
+    "nomorkartu": "0002022983605",
+    "nik": "1212010902990002",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602251616",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-02-09 14:04:24] ======================================
+[2026-02-09 14:04:24] Pasien dikirim: PUTRI WAHYUNI => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:04:25] PAYLOAD BPJS (RAW):
+[2026-02-09 14:04:25] {
+    "nomorkartu": "0002071806197",
+    "nik": "9106013110490001",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602261619",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-002",
+    "angkaantrean": "002",
+    "keterangan": ""
+}
+[2026-02-09 14:04:25] ======================================
+[2026-02-09 14:04:26] Pasien dikirim: JANCE RUMBIAK => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:04:32] Cek pasien BPJS tanggal 2026-02-09 (SENIN) ...
+[2026-02-09 14:04:32] PAYLOAD BPJS (RAW):
+[2026-02-09 14:04:32] {
+    "nomorkartu": "0002022983605",
+    "nik": "1212010902990002",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602251616",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-02-09 14:04:32] ======================================
+[2026-02-09 14:04:33] Pasien dikirim: PUTRI WAHYUNI => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:04:34] PAYLOAD BPJS (RAW):
+[2026-02-09 14:04:34] {
+    "nomorkartu": "0002071806197",
+    "nik": "9106013110490001",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602261619",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-002",
+    "angkaantrean": "002",
+    "keterangan": ""
+}
+[2026-02-09 14:04:34] ======================================
+[2026-02-09 14:04:34] Pasien dikirim: JANCE RUMBIAK => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:04:43] === Service Antrean BPJS siap dijalankan ===
+[2026-02-09 14:04:43] Cek pasien BPJS tanggal 2026-02-09 (SENIN) ...
+[2026-02-09 14:04:43] PAYLOAD BPJS (RAW):
+[2026-02-09 14:04:43] {
+    "nomorkartu": "0002022983605",
+    "nik": "1212010902990002",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602251616",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-02-09 14:04:43] ======================================
+[2026-02-09 14:04:43] Pasien dikirim: PUTRI WAHYUNI => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:04:44] PAYLOAD BPJS (RAW):
+[2026-02-09 14:04:44] {
+    "nomorkartu": "0002071806197",
+    "nik": "9106013110490001",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602261619",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-002",
+    "angkaantrean": "002",
+    "keterangan": ""
+}
+[2026-02-09 14:04:44] ======================================
+[2026-02-09 14:04:44] Pasien dikirim: JANCE RUMBIAK => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:05:40] === Service Antrean BPJS siap dijalankan ===
+[2026-02-09 14:05:40] Cek pasien BPJS tanggal 2026-02-09 (SENIN) ...
+[2026-02-09 14:05:40] PAYLOAD BPJS (RAW):
+[2026-02-09 14:05:40] {
+    "nomorkartu": "0002022983605",
+    "nik": "1212010902990002",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602251616",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-02-09 14:05:40] ======================================
+[2026-02-09 14:05:41] Pasien dikirim: PUTRI WAHYUNI => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:05:42] PAYLOAD BPJS (RAW):
+[2026-02-09 14:05:42] {
+    "nomorkartu": "0002071806197",
+    "nik": "9106013110490001",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602261619",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-002",
+    "angkaantrean": "002",
+    "keterangan": ""
+}
+[2026-02-09 14:05:42] ======================================
+[2026-02-09 14:05:42] Pasien dikirim: JANCE RUMBIAK => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:10:29] === Service Antrean BPJS siap dijalankan ===
+[2026-02-09 14:10:29] Cek pasien BPJS tanggal 2026-02-09 (SENIN) ...
+[2026-02-09 14:10:29] PAYLOAD BPJS (RAW):
+[2026-02-09 14:10:29] {
+    "nomorkartu": "0002022983605",
+    "nik": "1212010902990002",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602251616",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-02-09 14:10:29] ======================================
+[2026-02-09 14:10:29] Pasien dikirim: PUTRI WAHYUNI => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:10:30] PAYLOAD BPJS (RAW):
+[2026-02-09 14:10:30] {
+    "nomorkartu": "0002071806197",
+    "nik": "9106013110490001",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602261619",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-002",
+    "angkaantrean": "002",
+    "keterangan": ""
+}
+[2026-02-09 14:10:30] ======================================
+[2026-02-09 14:10:30] Pasien dikirim: JANCE RUMBIAK => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:10:36] Cek pasien BPJS tanggal 2026-02-09 (SENIN) ...
+[2026-02-09 14:10:36] PAYLOAD BPJS (RAW):
+[2026-02-09 14:10:36] {
+    "nomorkartu": "0002022983605",
+    "nik": "1212010902990002",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602251616",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-02-09 14:10:36] ======================================
+[2026-02-09 14:10:37] Pasien dikirim: PUTRI WAHYUNI => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:10:38] PAYLOAD BPJS (RAW):
+[2026-02-09 14:10:38] {
+    "nomorkartu": "0002071806197",
+    "nik": "9106013110490001",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602261619",
+    "tanggalperiksa": "2026-02-09",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-002",
+    "angkaantrean": "002",
+    "keterangan": ""
+}
+[2026-02-09 14:10:38] ======================================
+[2026-02-09 14:10:39] Pasien dikirim: JANCE RUMBIAK => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 14:10:45] Cek pasien BPJS tanggal 2026-02-09 (SENIN) ...
+[2026-02-09 23:07:00] === Service Antrean BPJS siap dijalankan ===
+[2026-02-09 23:07:44] === Service Antrean BPJS siap dijalankan ===
+[2026-02-09 23:07:44] Cek pasien BPJS tanggal 2026-02-10 (SELASA) ...
+[2026-02-09 23:07:44] PAYLOAD BPJS (RAW):
+[2026-02-09 23:07:44] {
+    "nomorkartu": "0002071806197",
+    "nik": "9106013110490001",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602261619",
+    "tanggalperiksa": "2026-02-10",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-02-09 23:07:44] ======================================
+[2026-02-09 23:07:44] Pasien dikirim: JANCE RUMBIAK => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 23:07:45] PAYLOAD BPJS (RAW):
+[2026-02-09 23:07:45] {
+    "nomorkartu": "0002022983605",
+    "nik": "1212010902990002",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602251616",
+    "tanggalperiksa": "2026-02-10",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-002",
+    "angkaantrean": "002",
+    "keterangan": ""
+}
+[2026-02-09 23:07:45] ======================================
+[2026-02-09 23:07:46] Pasien dikirim: PUTRI WAHYUNI => Status: gagal (401) | Pesan: Unauthorized, invalid signature
+[2026-02-09 23:13:35] === Service Antrean BPJS siap dijalankan ===
+[2026-02-09 23:13:35] Cek pasien BPJS tanggal 2026-02-10 (SELASA) ...
+[2026-02-09 23:13:35] PAYLOAD BPJS (RAW):
+[2026-02-09 23:13:35] {
+    "nomorkartu": "0002071806197",
+    "nik": "9106013110490001",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602261619",
+    "tanggalperiksa": "2026-02-10",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-02-09 23:13:35] ======================================
+[2026-02-09 23:13:35] Pasien dikirim: JANCE RUMBIAK => Status: gagal (201) | Pesan: Peserta sudah terdaftar di poli tersebut pada hari ini
+[2026-02-09 23:13:36] PAYLOAD BPJS (RAW):
+[2026-02-09 23:13:36] {
+    "nomorkartu": "0002022983605",
+    "nik": "1212010902990002",
+    "nohp": "-",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "2602251616",
+    "tanggalperiksa": "2026-02-10",
+    "kodedokter": "594955",
+    "namadokter": "dr. Megawaty Lumbantoruan",
+    "jampraktek": "08:00-15:00",
+    "nomorantrean": "XX-002",
+    "angkaantrean": "002",
+    "keterangan": ""
+}
+[2026-02-09 23:13:36] ======================================
+[2026-02-09 23:13:37] Pasien dikirim: PUTRI WAHYUNI => Status: gagal (201) | Pesan: Peserta sudah terdaftar di poli tersebut pada hari ini

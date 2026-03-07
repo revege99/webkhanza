@@ -1,0 +1,6 @@
+{
+    "require": {
+        "tecnickcom/tcpdf": "^6.8",
+        "nullpunkt/lz-string-php": "^1.3"
+    }
+}

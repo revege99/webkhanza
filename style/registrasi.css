@@ -1,0 +1,214 @@
+body{
+    font-size: 1.2rem;
+    font-family:'Quicksand', sans-serif;
+    background-color: #F0F1F4;
+   
+}
+
+/*#record {
+	float: right;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	background-color: white;
+	box-shadow:0px 2px 8px grey ; ;
+}*/
+
+#record p{
+	font-size: 12px;
+	font-family: 'Quicksand', sans-serif;
+	position: fixed;
+	right: 5rem;
+margin-top: -18px;
+background-color: white;
+padding: 0.5rem;
+border-radius: 1rem;
+padding-right: 2rem;
+padding-left: 2rem;
+box-shadow:0px 2px 3px grey ;
+
+}
+
+.export #export{
+	width: 150px;
+}
+
+.content{
+	position: relative;
+	margin-left: 12rem;
+	padding-right: 2rem;
+}
+.content .navbar{
+	margin-left: 12rem;
+}
+#data{
+	margin-top: 5rem;
+	justify-content: center;
+	align-items: center;
+	margin-left: 1rem;
+	background-color: white;
+	box-shadow: 0px 0px 15px white;
+	
+}
+
+#table-container{
+	overflow-y: auto;
+	max-height: 80vh;
+	overflow-x: auto;
+	min-width: 100vh;
+}
+
+.navbar{
+	background-color: white;
+	box-shadow: 0px 3px 20px black;
+	height: 4rem;
+}
+
+.container-fluid table{
+	border: 1px solid black;
+
+}
+
+.content .input-group{
+	width: 20rem;
+	margin-left: 10px;
+}
+.content .input-group input::placeholder{
+	font-size: 0.8rem;
+}
+
+.container-fluid table tr th{
+	border: 1px solid black;
+	text-align: center;
+	font-weight: bold;
+	background-color: grey;
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+.container-fluid table tr td{
+	border: 1px solid black;
+	font-size: 10px;
+	white-space: nowrap;
+	height: -0.5rem;
+}
+
+#container-fitur{
+	width: 100%;
+	height: 50px;
+/*	margin-bottom: 10px;*/
+	background-color: white;
+	box-shadow:0px 2px 8px grey ;
+	position: fixed;
+	bottom : 0rem;
+}
+
+#container-fitur .input-group input,
+#container-fitur button,
+#container-fitur .input-group .input-group-text{
+	font-size: 10px;
+}
+
+
+#fitur{
+/*	position: fixed;*/
+margin-top: 1.3rem;
+align-items: center;
+
+}
+
+#accordionSidebar{
+/*	background-color: darkred;*/
+}
+.sidebar {
+            width: 12rem;
+            height: 100vh;
+            color: white;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            z-index: 9999;
+            top: 0;
+            font-family:'Quicksand', sans-serif;
+            background-color: #4D72DE;
+            display: flex;
+            flex-direction: column;
+        }
+        .sidebar .navbar-nav .text-center a {
+        	color: white;
+        	background-color: white;
+        	text-decoration: none;
+        	font-weight: bolder;
+        }
+       
+        .sidebar .text-center{
+/*        	background-color: #4D72DE;*/
+        	position: relative;
+        	height: 4rem;
+        	width: 12.74rem;
+        	top: 0;
+        	box-shadow:0px 2px 8px black ;
+
+        }
+
+        .sidebar h2{
+        	font-size: 2rem;
+        	color: black;
+        	font-family: Quicksand;
+        	font-weight: 600;
+        	text-shadow: 0px 2px 4px black;
+        }
+        
+        .dropdown-divider{
+        	margin-top: 1rem;
+        	height: 100%;
+
+        }
+
+        .dropdown{
+        	position: relative;
+        	margin-bottom: 1px;
+        	
+        }
+        .dropdown:hover{
+        	background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /*.dropdown a:hover{
+        	color: white;
+        }*/
+        
+
+        .dropdown-toggle-icon{
+        	width: 100%;
+        	text-align: left;
+	         font-family: "Quicksand", serif;
+			  font-optical-sizing: auto;
+			  font-weight: bold;
+			  font-style: normal;
+			  color: black;
+        }
+
+        #icon{
+        	margin-right: 1rem;
+        }
+
+
+        #dropdown-toggle{
+		 color: white;
+        }
+
+        .sidebar .chevron-icon{
+        	position: absolute;
+        	right: 1rem;
+/*        	color: #CED0D4;*/
+        }
+
+        .dropdown:hover {
+            color: white;
+        }
+        /*.sidebar .menu-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            height: 100%;
+        }*/
