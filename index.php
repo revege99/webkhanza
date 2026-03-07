@@ -83,6 +83,9 @@ $allowed_pages = [
 // Halaman publik (tanpa login)
 $public_pages = ['login', 'proses_login'];
 
+// Tambahkan semua halaman service menjadi public
+$public_pages = array_merge($public_pages, $allowed_pages['service']);
+
 if (!isset($_SESSION['login']) && !in_array($page, $public_pages)) {
 
     // SIMPAN URL YANG DIMINTA
