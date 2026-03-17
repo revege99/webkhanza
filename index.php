@@ -14,7 +14,6 @@ require_once __DIR__ . '/function/function_klinik.php';
  * ============================
  */
 
-// Tangkap parameter page (default: home)
 $page = isset($_GET['page']) ? basename($_GET['page']) : 'home';
 
 /**
@@ -77,28 +76,58 @@ $allowed_pages = [
 
 /**
  * ============================
+ * RESOLUSI FILE
+ * ============================
+ */
+$file_found     = false;
+$file_path      = '';
+$current_folder = '';
+
+foreach ($folders as $folder) {
+
+    if (
+        isset($allowed_pages[$folder]) &&
+        in_array($page, $allowed_pages[$folder])
+    ) {
+
+        $path = "$folder/$page.php";
+
+        if (is_readable($path)) {
+            $file_found     = true;
+            $file_path      = $path;
+            $current_folder = $folder;
+            break;
+        }
+    }
+}
+
+/**
+ * ============================
  * AUTH GUARD
  * ============================
  */
-// Halaman publik (tanpa login)
-$public_pages = ['login', 'proses_login'];
 
-// Tambahkan semua halaman service menjadi public
-$public_pages = array_merge($public_pages, $allowed_pages['service']);
+/* halaman yang bebas login */
+$public_pages = [
+    'login',
+    'proses_login',
+    'proses_del_obat',   // bridging yang diizinkan tanpa login
+    'function_pasien_tidakhadir'
+];
 
-if (!isset($_SESSION['login']) && !in_array($page, $public_pages)) {
+/* folder yang bebas login */
+$public_folders = [
+    'service'
+];
 
-    // SIMPAN URL YANG DIMINTA
+if (
+    !isset($_SESSION['login']) &&
+    !in_array($page, $public_pages) &&
+    !in_array($current_folder, $public_folders)
+) {
+
     $_SESSION['redirect_after_login'] = $_SERVER['REQUEST_URI'];
 
-    header("Location: index.php?page=login");
-    exit;
-}
-
-
-
-// Jika belum login & bukan halaman publik → redirect ke login
-if (!isset($_SESSION['login']) && !in_array($page, $public_pages)) {
     header("Location: index.php?page=login");
     exit;
 }
@@ -119,41 +148,14 @@ $no_sidebar_pages = [
     'function_panggil_antrean'
 ];
 
-
-/**
- * ============================
- * RESOLUSI FILE
- * ============================
- */
-$file_found     = false;
-$file_path      = '';
-$current_folder = '';
-
-foreach ($folders as $folder) {
-    if (
-        isset($allowed_pages[$folder]) &&
-        in_array($page, $allowed_pages[$folder])
-    ) {
-        $path = "$folder/$page.php";
-        if (is_readable($path)) {
-            $file_found     = true;
-            $file_path      = $path;
-            $current_folder = $folder;
-            break;
-        }
-    }
-}
-
 /**
  * ============================
  * RENDER HALAMAN
  * ============================
  */
+
 if ($file_found) {
 
-    // Sidebar hanya jika:
-    // - user sudah login
-    // - halaman tidak ada di no_sidebar_pages
     if (
         isset($_SESSION['login']) &&
         !in_array($page, $no_sidebar_pages)
@@ -161,10 +163,11 @@ if ($file_found) {
         include 'views/sidebar.php';
     }
 
-    // Konten utama
     include $file_path;
 
 } else {
+
     http_response_code(404);
     echo "<h2 style='text-align:center;color:red'>404 - Page Not Found</h2>";
+
 }

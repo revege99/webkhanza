@@ -129,7 +129,7 @@ $record = count($Kunjungan);
               </div>
               <div class="col-md-3 mb-3">
                 <label>darahRutinErit</label>
-                <input type="text" name="darahRutinErit" class="form-control" value="7">
+                <input type="text" name="darahRutinErit" class="form-control" value="0">
               </div>
               <div class="col-md-3 mb-3">
                 <label>darahRutinLaju</label>

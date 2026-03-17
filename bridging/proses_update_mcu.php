@@ -5,7 +5,7 @@ if (file_exists($function_path)) {
 } else {
     die("Error: File function.php tidak ditemukan di $function_path");
 }
-
+require_once __DIR__ . '/../function/bpjs_helper.php';
 require_once 'myproject/vendor/autoload.php';
 use LZCompressor\LZString;
 date_default_timezone_set('UTC');

@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/../function/function_klinik.php'; // koneksi & helper DB
+require_once __DIR__ . '/../function/bpjs_config.php'; // koneksi & helper DB
 
 header('Content-Type: application/json'); // pastikan output JSON
 date_default_timezone_set('Asia/Jakarta');
@@ -61,22 +62,23 @@ echo '</pre>';
 
 
 // BPJS API
-$cons_id    = '13216';
-$secret_key = '3nG5007800';
-$user_key   = '907eacdff6474399dafd7c60d4b13c0a';
-$url_panggil = "https://apijkn-dev.bpjs-kesehatan.go.id/antreanfktp_dev/antrean/panggil";
+// $cons_id    = '13216';
+// $secret_key = '3nG5007800';
+// $user_key   = '907eacdff6474399dafd7c60d4b13c0a';
+// $url_panggil = "https://apijkn-dev.bpjs-kesehatan.go.id/antreanfktp_dev/antrean/panggil";
 
-date_default_timezone_set('UTC');
-$timestamp = time();
-$signature = base64_encode(hash_hmac('sha256', $cons_id . "&" . $timestamp, $secret_key, true));
-$auth      = "Basic ".base64_encode("0030B011:Stmartina30#:095");
-
+// date_default_timezone_set('UTC');
+// $timestamp = time();
+// $signature = base64_encode(hash_hmac('sha256', $cons_id . "&" . $timestamp, $secret_key, true));
+// $auth      = "Basic ".base64_encode("0030B011:Stmartina30#:095");
+// var_dump($user_key_antrol);
+// exit();
 $headers = [
   
     "X-cons-id: $cons_id",
     "X-timestamp: $timestamp",
     "X-signature: $signature",
-    "user_key: $user_key"
+    "user_key: $user_key_antrol"
 ];
 
 echo '<pre>';

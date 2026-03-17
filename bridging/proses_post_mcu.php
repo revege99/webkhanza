@@ -1,13 +1,13 @@
 <?php
-
 $function_path = __DIR__ . '/../function/function_klinik.php';
 if (file_exists($function_path)) {
     require_once $function_path;
 } else {
-    die("Error: File function.php tidak ditemukan di $function_path");
+    die("Error: File function_klinik.php tidak ditemukan di $function_path");
 }
 
-require_once 'myproject/vendor/autoload.php';
+require_once __DIR__ . '/../myproject/vendor/autoload.php';
+require_once __DIR__ . '/../function/bpjs_helper.php';
 use LZCompressor\LZString;
 date_default_timezone_set('UTC');
 
@@ -126,8 +126,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     "fungsiJantungEcho"      => $_POST['fungsiJantungEcho'] === "" ? null : $_POST['fungsiJantungEcho'],
     "funduskopi"             => $_POST['funduskopi'] === "" ? null : $_POST['funduskopi'],
     "pemeriksaanLain"        => $_POST['pemeriksaanLain'] === "" ? null : $_POST['pemeriksaanLain'],
-    "keterangan"             => $_POST['keterangan'] === "" ? null : $_POST['keterangan'],
-    "kd_provider"             => $_POST['kd_provider'] === "" ? null : $_POST['kd_provider']
+    "keterangan"             => $_POST['keterangan'] === "" ? null : $_POST['keterangan']
+    
 ];
 
     $tStamp  = strval(time());

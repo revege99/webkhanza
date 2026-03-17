@@ -3,8 +3,11 @@ $function_path = __DIR__ . '/../function/function_klinik.php';
 if (file_exists($function_path)) {
     require_once $function_path;
 } else {
-    die("Error: File function.php tidak ditemukan di $function_path");
+    die("Error: File function_klinik.php tidak ditemukan di $function_path");
 }
+
+require_once __DIR__ . '/../myproject/vendor/autoload.php';
+require_once __DIR__ . '/../function/bpjs_helper.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['kdMCU'], $_POST['noKunjungan'])) {
     $kdMCU = $_POST['kdMCU'];

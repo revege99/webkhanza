@@ -42,7 +42,7 @@ curl_setopt_array($ch, [
         "X-timestamp: $timestamp",
         "X-signature: $signature",
         "X-authorization: $authorization",
-        "user_key: $user_key"
+        "user_key: $user_key_pcare"
     ],
 ]);
 

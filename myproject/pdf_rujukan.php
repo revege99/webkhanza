@@ -367,6 +367,19 @@ $html = '
 
 
     </tr>
+    <tr >
+        <td colspan="2" style="text-align: left; width:15%">
+            Alasan TACC 
+        </td>
+        <td colspan="1" style="text-align: center; width:3%; ">
+            :
+        </td>
+        <td colspan="9" style="text-align: left;width:82%;">
+            ' . htmlspecialchars($data_pasien['alasanTACC'] ?? '') . '
+        </td>
+
+
+    </tr>
     <tr style="background-color="red;>
         <td colspan="9" style="text-align: center; width:68% ">
            

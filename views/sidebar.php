@@ -12,7 +12,7 @@
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-   <link rel="stylesheet" href="/stmartina/views/css/sidebar.css">
+   <link rel="stylesheet" href="/webkhanza/views/css/sidebar.css">
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -5,7 +5,7 @@ if (file_exists($function_path)) {
 } else {
     die("Error: File function.php tidak ditemukan di $function_path");
 }
-
+require_once __DIR__ . '/../function/bpjs_helper.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['kdObatSK'], $_POST['noKunjungan'])) {
     $kdObatSK = $_POST['kdObatSK'];
     $noKunjungan = $_POST['noKunjungan'];
@@ -97,23 +97,23 @@ if ($httpCode == 200 || $httpCode == 201 || $httpCode == 401) {
 
 
 // Fungsi untuk generate headers
-function generateBpjsHeaders($timestamp) {
-    date_default_timezone_set('UTC');
+// function generateBpjsHeaders($timestamp) {
+//     date_default_timezone_set('UTC');
 
-    $cons_id    = "25685";
-    $secret_key = "9hX4AEEB8C";
-    $user_key   = "a0e225428271c8e127fc2c539ff0192f";
+//     $cons_id    = "25685";
+//     $secret_key = "9hX4AEEB8C";
+//     $user_key   = "a0e225428271c8e127fc2c539ff0192f";
 
-    $data      = $cons_id . "&" . $timestamp;
-    $signature = base64_encode(hash_hmac('sha256', $data, $secret_key, true));
-    $auth      = "Basic " . base64_encode("tester.stmartina:Bpjs123**:095");
+//     $data      = $cons_id . "&" . $timestamp;
+//     $signature = base64_encode(hash_hmac('sha256', $data, $secret_key, true));
+//     $auth      = "Basic " . base64_encode("tester.stmartina:Bpjs123**:095");
 
-    return [
-        "X-cons-id: $cons_id",
-        "X-timestamp: $timestamp",
-        "X-signature: $signature",
-        "X-authorization: $auth",
-        "user_key: $user_key"
-    ];
-}
+//     return [
+//         "X-cons-id: $cons_id",
+//         "X-timestamp: $timestamp",
+//         "X-signature: $signature",
+//         "X-authorization: $auth",
+//         "user_key: $user_key"
+//     ];
+// }
 ?>

@@ -27,23 +27,23 @@ function query($query) {
 }
 
 
-function generateBpjsHeaders($timestamp) {
-    date_default_timezone_set('UTC');
+// function generateBpjsHeaders($timestamp) {
+//     date_default_timezone_set('UTC');
 
-    $cons_id    = "13216";
-    $secret_key = "3nG5007800";
-    $user_key   = "f126b8a2c2488a9eec8e79fdd0bd55ef";
-    $signature  = base64_encode(hash_hmac('sha256', "$cons_id&$timestamp", $secret_key, true));
-    $auth       = "Basic " . base64_encode("0373B006.pcare:LebihH1dup!:095");
+//     $cons_id    = "13216";
+//     $secret_key = "3nG5007800";
+//     $user_key   = "f126b8a2c2488a9eec8e79fdd0bd55ef";
+//     $signature  = base64_encode(hash_hmac('sha256', "$cons_id&$timestamp", $secret_key, true));
+//     $auth       = "Basic " . base64_encode("0373B006.pcare:LebihH1dup!:095");
 
-    return [
-        "X-cons-id: $cons_id",
-        "X-timestamp: $timestamp",
-        "X-signature: $signature",
-        "X-authorization: $auth",
-        "user_key: $user_key"
-    ];
-}
+//     return [
+//         "X-cons-id: $cons_id",
+//         "X-timestamp: $timestamp",
+//         "X-signature: $signature",
+//         "X-authorization: $auth",
+//         "user_key: $user_key"
+//     ];
+// }
 
 
 
