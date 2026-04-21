@@ -2,7 +2,7 @@
 
 
 // Koneksi ke database
-$conn = mysqli_connect("localhost", "root", "s1ntluc14", "sik_tester_lintong");
+$conn = mysqli_connect("localhost", "root", "", "sik_tester_lintong");
 
 // Cek koneksi
 if (!$conn) {
