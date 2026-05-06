@@ -6,9 +6,9 @@ require_once __DIR__ . '/../../webkhanza/function/function_klinik.php';
 require_once __DIR__ . '/../../webkhanza/myproject/vendor/autoload.php';
 
 // ---------- Konfigurasi BPJS ----------
-$cons_id    = '14494';
-$secret_key = '6tXBDE443B';
-$user_key   = '19d485ce5a10c80fb455c39ca25f4b89';
+$cons_id    = $cons_id;
+$secret_key = $secret_key;
+$user_key   = $user_key_antrol ;
 $url_add    = "https://apijkn.bpjs-kesehatan.go.id/antreanfktp/antrean/add";
 
 // ---------- Fungsi Nomor Antrean ----------

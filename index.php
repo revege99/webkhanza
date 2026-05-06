@@ -64,7 +64,10 @@ $allowed_pages = [
         'function_kirim_antrean',
         'function_batal_antrean',
         'function_panggil_antrean',
-        'function_pasien_tidakhadir'
+        'function_pasien_tidakhadir',
+        'icare',
+        'service_cek_tacc',
+        'function_tacc'
     ],
 
     'auth' => [
@@ -145,7 +148,8 @@ $no_sidebar_pages = [
     'proses_post_obat',
     'proses_del_mcu',
     'proses_update_mcu',
-    'function_panggil_antrean'
+    'function_panggil_antrean',
+    'function_tacc'
 ];
 
 /**

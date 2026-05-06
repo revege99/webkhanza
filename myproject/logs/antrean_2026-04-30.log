@@ -1,0 +1,38 @@
+[2026-04-30 22:09:39] === Service Antrean BPJS siap dijalankan ===
+[2026-04-30 22:09:39] Cek pasien BPJS tanggal 2026-04-30 (KAMIS) ...
+[2026-04-30 22:09:39] PAYLOAD BPJS (RAW):
+[2026-04-30 22:09:39] {
+    "nomorkartu": "0000193561446",
+    "nik": "1211032501870001",
+    "nohp": "081397987835",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "00014094",
+    "tanggalperiksa": "2026-04-30",
+    "kodedokter": "572056",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-14:00",
+    "nomorantrean": "SN-001",
+    "angkaantrean": "001",
+    "keterangan": ""
+}
+[2026-04-30 22:09:39] ======================================
+[2026-04-30 22:09:40] Pasien dikirim: PAULUS PARDOSI => Status: proses ulang (201) | Pesan: Jadwal dokter tidak ditemukan
+[2026-04-30 22:09:41] No_rawat 2026/04/30/000023 masih menunggu skrining. Service akan mengirim ulang sampai status berubah.
+[2026-04-30 22:09:41] PAYLOAD BPJS (RAW):
+[2026-04-30 22:09:41] {
+    "nomorkartu": "0002738546346",
+    "nik": "1211015106160001",
+    "nohp": "082165703179",
+    "kodepoli": "001",
+    "namapoli": "Poliklinik Umum",
+    "norm": "00006450",
+    "tanggalperiksa": "2026-04-30",
+    "kodedokter": "572056",
+    "namadokter": "dr. Susan Esterelita Sitompul",
+    "jampraktek": "08:00-14:00",
+    "nomorantrean": "SN-019",
+    "angkaantrean": "019",
+    "keterangan": ""
+}
+[2026-04-30 22:09:41] ======================================

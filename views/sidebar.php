@@ -58,6 +58,7 @@
                         <li><a class="dropdown-item" href="?page=data_mcu">Data Pcare MCU</a></li>
                         <li><a class="dropdown-item" href="?page=data_obat">Data Pcare Obat</a></li>
                         <li><a class="dropdown-item" href="?page=put_rujukan">Ubah Rujukan</a></li>
+                        <li><a class="dropdown-item" href="?page=put_rujukan">Ubah Rujukan</a></li>
                     </ul>
                 </div>
 
@@ -70,6 +71,7 @@
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="?page=antrean">Antrean</a></li>
                         <li><a class="dropdown-item" href="?page=kirim_antrean">Antrean Service</a></li>
+                        <li><a class="dropdown-item" href="?page=service_cek_tacc">Tacc</a></li>
                         
                     </ul>
                 </div>
