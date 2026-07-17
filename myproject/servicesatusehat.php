@@ -90,6 +90,20 @@ function sendFHIR($type, $payload, $token) {
     return ['http_code' => $info['http_code'], 'response' => json_decode($res, true)];
 }
 
+function normalizeNumericValue($value, $allowDecimal = true) {
+    $value = trim((string)($value ?? ''));
+    if ($value === '') {
+        return null;
+    }
+
+    $normalized = str_replace(',', '.', $value);
+    if (!is_numeric($normalized)) {
+        return null;
+    }
+
+    return $allowDecimal ? (float)$normalized : (int)$normalized;
+}
+
 /* === LOOP UTAMA === */
 echo "=== [" . date('Y-m-d H:i:s') . "] Service Encounter & Condition berjalan... ===" . PHP_EOL;
 
@@ -516,8 +530,8 @@ while ($diag = $resDiag->fetch_assoc()) {
             }
 
             // === CEK APAKAH ADA NILAI suhu DI PEMERIKSAAN_RALAN ===
-            if (!empty($suhu['suhu_tubuh'])) {
-                $suhuVal = (int)$suhu['suhu_tubuh'];
+            $suhuVal = normalizeNumericValue($suhu['suhu_tubuh'] ?? null);
+            if ($suhuVal !== null) {
                 echo "✅ suhu ditemukan: {$suhuVal}" . PHP_EOL;
 
                 $timeObs = date('Y-m-d\TH:i:sP', strtotime($suhu['tgl_perawatan'].' '.$suhu['jam_rawat']));
@@ -668,8 +682,8 @@ $sqlRespi = "
             }
 
             // === CEK APAKAH ADA NILAI respirasi DI PEMERIKSAAN_RALAN ===
-            if (!empty($respirasi['respirasi'])) {
-                $respirasiVal = (int)$respirasi['respirasi'];
+            $respirasiVal = normalizeNumericValue($respirasi['respirasi'] ?? null, false);
+            if ($respirasiVal !== null) {
                 echo "✅ respirasi ditemukan: {$respirasiVal}" . PHP_EOL;
 
                 $timeObs = date('Y-m-d\TH:i:sP', strtotime($respirasi['tgl_perawatan'].' '.$respirasi['jam_rawat']));
@@ -820,8 +834,8 @@ $sqlRespi = "
                 }
 
                 // === CEK APAKAH ADA NILAI NADI DI PEMERIKSAAN_RALAN ===
-                if (!empty($nadi['nadi'])) {
-                    $nadiVal = (int)$nadi['nadi'];
+                $nadiVal = normalizeNumericValue($nadi['nadi'] ?? null, false);
+                if ($nadiVal !== null) {
                     echo "✅ Nadi ditemukan: {$nadiVal}" . PHP_EOL;
 
                     $timeObs = date('Y-m-d\TH:i:sP', strtotime($nadi['tgl_perawatan'].' '.$nadi['jam_rawat']));
@@ -971,8 +985,8 @@ $sqlRespi = "
                 }
 
                 // === CEK APAKAH ADA NILAI spo2 DI PEMERIKSAAN_RALAN ===
-                if (!empty($spo2['spo2'])) {
-                    $spo2Val = (int)$spo2['spo2'];
+                $spo2Val = normalizeNumericValue($spo2['spo2'] ?? null, false);
+                if ($spo2Val !== null) {
                     echo "✅ spo2 ditemukan: {$spo2Val}" . PHP_EOL;
 
                     $timeObs = date('Y-m-d\TH:i:sP', strtotime($spo2['tgl_perawatan'].' '.$spo2['jam_rawat']));
@@ -1121,8 +1135,8 @@ $sqlRespi = "
                 }
 
                 // === CEK APAKAH ADA NILAI gcs DI PEMERIKSAAN_RALAN ===
-                if (!empty($gcs['gcs'])) {
-                    $gcsVal = (int)$gcs['gcs'];
+                $gcsVal = normalizeNumericValue($gcs['gcs'] ?? null, false);
+                if ($gcsVal !== null) {
                     echo "✅ gcs ditemukan: {$gcsVal}" . PHP_EOL;
 
                     $timeObs = date('Y-m-d\TH:i:sP', strtotime($gcs['tgl_perawatan'].' '.$gcs['jam_rawat']));
@@ -1450,13 +1464,19 @@ $sqlRespi = "
                 $diastole = null;
 
                 if (strpos($tensiRaw, '/') !== false) {
-                    list($sistole, $diastole) = explode('/', $tensiRaw);
-                    $sistole = floatval(trim($sistole));
-                    $diastole = floatval(trim($diastole));
-                } else {
-                    // Jika tidak ada tanda '/', asumsikan hanya sistole
-                    $sistole = floatval($tensiRaw);
-                    $diastole = null;
+                    list($sistoleRaw, $diastoleRaw) = array_pad(explode('/', $tensiRaw, 2), 2, '');
+                    $sistoleRaw = trim($sistoleRaw);
+                    $diastoleRaw = trim($diastoleRaw);
+
+                    if ($sistoleRaw !== '' && $diastoleRaw !== '' && is_numeric($sistoleRaw) && is_numeric($diastoleRaw)) {
+                        $sistole = (float)$sistoleRaw;
+                        $diastole = (float)$diastoleRaw;
+                    }
+                }
+
+                if ($sistole === null || $diastole === null) {
+                    echo "ℹ️ Tidak ada data tensi untuk {$row['nm_pasien']}." . PHP_EOL;
+                    goto lanjut_tinggi;
                 }
 
                 // var_dump($sistole);
@@ -1640,8 +1660,8 @@ $sqlRespi = "
                 }
 
                 // === CEK APAKAH ADA NILAI tinggi DI PEMERIKSAAN_RALAN ===
-                if (!empty($tinggi['tinggi'])) {
-                    $tinggiVal = (int)$tinggi['tinggi'];
+                $tinggiVal = normalizeNumericValue($tinggi['tinggi'] ?? null);
+                if ($tinggiVal !== null) {
                     echo "✅ tinggi ditemukan: {$tinggiVal}" . PHP_EOL;
 
                     $timeObs = date('Y-m-d\TH:i:sP', strtotime($tinggi['tgl_perawatan'].' '.$tinggi['jam_rawat']));
@@ -1794,8 +1814,8 @@ $sqlRespi = "
                 }
 
                 // === CEK APAKAH ADA NILAI berat DI PEMERIKSAAN_RALAN ===
-                if (!empty($berat['berat'])) {
-                    $beratVal = (int)$berat['berat'];
+                $beratVal = normalizeNumericValue($berat['berat'] ?? null);
+                if ($beratVal !== null) {
                     echo "✅ berat ditemukan: {$beratVal}" . PHP_EOL;
 
                     $timeObs = date('Y-m-d\TH:i:sP', strtotime($berat['tgl_perawatan'].' '.$berat['jam_rawat']));
@@ -1948,8 +1968,8 @@ $sqlRespi = "
                 }
 
                 // === CEK APAKAH ADA NILAI lingkar_perut DI PEMERIKSAAN_RALAN ===
-                if (!empty($lingkar_perut['lingkar_perut'])) {
-                    $lingkar_perutVal = (int)$lingkar_perut['lingkar_perut'];
+                $lingkar_perutVal = normalizeNumericValue($lingkar_perut['lingkar_perut'] ?? null);
+                if ($lingkar_perutVal !== null) {
                     echo "✅ lingkar_perut ditemukan: {$lingkar_perutVal}" . PHP_EOL;
 
                     $timeObs = date('Y-m-d\TH:i:sP', strtotime($lingkar_perut['tgl_perawatan'].' '.$lingkar_perut['jam_rawat']));
