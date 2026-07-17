@@ -3,64 +3,6 @@ date_default_timezone_set('Asia/Jakarta');
 require_once __DIR__ . '/../function/function.php';
 require_once __DIR__ . '/vendor/autoload.php';
 
-function consoleSanitize($text)
-{
-    $replacements = [
-        "\r\n" => "\n",
-        "\r" => "\n",
-        "❌" => "[ERROR]",
-        "⚠️" => "[WARN]",
-        "⚠" => "[WARN]",
-        "ℹ️" => "[INFO]",
-        "ℹ" => "[INFO]",
-        "✅" => "[OK]",
-        "🔹" => "[STEP]",
-        "🔁" => "[RETRY]",
-        "🆕" => "[NEW]",
-        "🚀" => "[SEND]",
-        "💾" => "[SAVE]",
-        "🔍" => "[CHECK]",
-        "👤" => "[PATIENT]",
-        "—" => "-",
-    ];
-
-    $text = strtr($text, $replacements);
-    $text = preg_replace("/[^\x09\x0A\x0D\x20-\x7E]/", "", $text);
-
-    return $text;
-}
-
-function consolePrint($text = '')
-{
-    echo consoleSanitize($text) . PHP_EOL;
-}
-
-function consoleLine($char = '=', $length = 72)
-{
-    echo str_repeat($char, $length) . PHP_EOL;
-}
-
-function consoleSection($title)
-{
-    consoleLine('=');
-    consolePrint('[' . date('Y-m-d H:i:s') . '] ' . $title);
-    consoleLine('=');
-}
-
-function consolePatientHeader($name, $noRawat)
-{
-    consoleLine('-');
-    consolePrint("[PATIENT] {$name}");
-    consolePrint("[VISIT]   {$noRawat}");
-    consoleLine('-');
-}
-
-if (PHP_SAPI === 'cli') {
-    if (function_exists('sapi_windows_vt100_support')) {
-        @sapi_windows_vt100_support(STDOUT, true);
-    }
-}
-
 /* === CONFIG === */
 $config = $conn->query("SELECT * FROM ss_config LIMIT 1")->fetch_assoc();
 $client_id       = $config['client_id'];
@@ -149,13 +91,13 @@ function sendFHIR($type, $payload, $token) {
 }
 
 /* === LOOP UTAMA === */
-consoleSection('Service SATUSEHAT berjalan');
+echo "=== [" . date('Y-m-d H:i:s') . "] Service Encounter & Condition berjalan... ===" . PHP_EOL;
 
 
 while (true) {
     $token = getAccessToken($client_id, $client_secret, $auth_url);
     if (!$token) {
-        consolePrint('[ERROR] Gagal ambil token, tunggu 60 detik...');
+        echo "❌ Gagal ambil token, tunggu 60 detik..." . PHP_EOL;
         sleep(60);
         continue;
     }
@@ -174,14 +116,18 @@ while (true) {
     ";
     $result = $GLOBALS['conn']->query($sql);
     if ($result->num_rows === 0) {
-        consolePrint('[INFO] Tidak ada encounter hari ini. Tunggu 30 detik...');
+        echo "ℹ️ Tidak ada encounter hari ini. Tunggu 30 detik..." . PHP_EOL;
         sleep(30);
         continue;
     }
 
     while ($row = $result->fetch_assoc()) {
-        echo PHP_EOL;
-        consolePatientHeader($row['nm_pasien'], $row['no_rawat']);
+        $nama_pasien = trim((string)($row['nm_pasien'] ?? ''));
+        $nik_pasien = trim((string)($row['nik_pasien'] ?? ''));
+        $nama_dokter = trim((string)($row['nm_dokter'] ?? ''));
+        $nik_dokter = trim((string)($row['nik_dokter'] ?? ''));
+        echo PHP_EOL . "======================" . PHP_EOL;
+        echo "👤 {$row['nm_pasien']} | {$row['no_rawat']}" . PHP_EOL;
 
         // CEK ENCOUNTER LOKAL
         $cek = $GLOBALS['conn']->query("SELECT * FROM satu_sehat_encounter_new WHERE no_rawat='{$row['no_rawat']}' AND status = 'success' LIMIT 1");
@@ -194,32 +140,37 @@ while (true) {
             echo "🔹 Membuat Encounter baru..." . PHP_EOL;
 
             // === CEK / BUAT PATIENT ===
-            $paramPatient = "name=" . urlencode($row['nm_pasien']) . "&identifier=https://fhir.kemkes.go.id/id/nik|" . $row['nik_pasien'];
+            if ($nik_pasien === '' || $nik_dokter === '') {
+                echo "âš ï¸ NIK pasien atau dokter kosong, lewati encounter ini." . PHP_EOL;
+                continue;
+            }
+
+            $paramPatient = "name=" . urlencode($nama_pasien) . "&identifier=https://fhir.kemkes.go.id/id/nik|" . $nik_pasien;
             $patient_id = getResource("Patient", $paramPatient, $token);
             if (!$patient_id) {
                 $payloadPatient = [
                     "resourceType" => "Patient",
                     "identifier" => [[
                         "system" => "https://fhir.kemkes.go.id/id/nik",
-                        "value" => $row['nik_pasien']
+                        "value" => $nik_pasien
                     ]],
-                    "name" => [["use" => "official", "text" => $row['nm_pasien']]],
+                    "name" => [["use" => "official", "text" => $nama_pasien]],
                     "active" => true
                 ];
                 $patient_id = createResource("Patient", $payloadPatient, $token);
             }
 
             // === CEK / BUAT PRACTITIONER ===
-            $paramPract = "identifier=https://fhir.kemkes.go.id/id/nik|" . $row['nik_dokter'];
+            $paramPract = "identifier=https://fhir.kemkes.go.id/id/nik|" . $nik_dokter;
             $pract_id = getResource("Practitioner", $paramPract, $token);
             if (!$pract_id) {
                 $payloadPract = [
                     "resourceType" => "Practitioner",
                     "identifier" => [[
                         "system" => "https://fhir.kemkes.go.id/id/nik",
-                        "value" => $row['nik_dokter']
+                        "value" => $nik_dokter
                     ]],
-                    "name" => [["use" => "official", "text" => $row['nm_dokter']]],
+                    "name" => [["use" => "official", "text" => $nama_dokter]],
                     "active" => true
                 ];
                 $pract_id = createResource("Practitioner", $payloadPract, $token);
@@ -244,7 +195,7 @@ while (true) {
                 ],
                 "subject" => [
                     "reference" => "Patient/$patient_id",
-                    "display" => $row['nm_pasien']
+                    "display" => $nama_pasien
                 ],
                 "participant" => [[
                     "type" => [[
@@ -256,7 +207,7 @@ while (true) {
                     ]],
                     "individual" => [
                         "reference" => "Practitioner/$pract_id",
-                        "display" => $row['nm_dokter']
+                        "display" => $nama_dokter
                     ]
                 ]],
                 "period" => [
