@@ -2274,7 +2274,10 @@ $sqlRespi = "
             LEFT JOIN pegawai pg ON rp.kd_dokter = pg.nik
             INNER JOIN diagnosa_pasien dp ON pr.no_rawat = dp.no_rawat
             INNER JOIN penyakit py ON dp.kd_penyakit = py.kd_penyakit
-            INNER JOIN satu_sehat_condition_new ssc ON pr.no_rawat = ssc.no_rawat
+            INNER JOIN satu_sehat_condition_new ssc
+                ON dp.no_rawat = ssc.no_rawat
+                AND dp.kd_penyakit = ssc.kd_penyakit
+                AND ssc.status = 'berhasil'
             LEFT JOIN satu_sehat_clinicalimpression_new sscl ON pr.no_rawat = sscl.no_rawat
             WHERE pr.no_rawat = '{$row['no_rawat']}'
             LIMIT 1
