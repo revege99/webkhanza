@@ -55,7 +55,7 @@ $tgl_perawatan2 = isset($_GET['tgl_perawatan2']) ? $_GET['tgl_perawatan2'] : '';
 // die();
 
 // Koneksi ke database
-$koneksi = new mysqli("localhost", "root", "s1ntluc14", "sik_tester_lintong");
+$koneksi = new mysqli("10.147.19.16", "root", "Server2024@", "sik");
 if ($koneksi->connect_error) {
     die("Koneksi gagal: " . $koneksi->connect_error);
 }
@@ -169,13 +169,10 @@ $pdf->AddPage();
 
 
 // Path gambar logo
-$logo_path = '../../img/logo.png'; 
+$logo_path = __DIR__ . '/../img/bpjslogo_pdf.jpg';
 $logo_paripurna = '../../paripurna.png';
 
 // Gunakan URL lokal jika file tidak ditemukan
-if (!file_exists($logo_path)) {
-    $logo_path = 'http://localhost/webkhanza/img/bpjslogo.png';
-}
 if (!file_exists($logo_paripurna)) {
     $logo_paripurna = 'http://localhost/klinik2/img/paripurna.png';
 }

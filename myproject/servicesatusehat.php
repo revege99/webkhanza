@@ -2744,14 +2744,16 @@ $sqlRespi = "
         INNER JOIN bangsal ON bangsal.kd_bangsal = detail_pemberian_obat.kd_bangsal
         INNER JOIN satu_sehat_mapping_lokasi_depo_farmasi ON satu_sehat_mapping_lokasi_depo_farmasi.kd_bangsal = bangsal.kd_bangsal
         INNER JOIN satu_sehat_medication ON satu_sehat_medication.kode_brng = satu_sehat_mapping_obat.kode_brng
-        LEFT JOIN satu_sehat_medicationdispense_new ON satu_sehat_medicationdispense_new.no_rawat = detail_pemberian_obat.no_rawat
-        INNER JOIN satu_sehat_medicationrequest_new ON resep_obat.no_resep = satu_sehat_medicationrequest_new.no_resep
-
+        LEFT JOIN satu_sehat_medicationdispense_new
+            ON satu_sehat_medicationdispense_new.no_rawat = detail_pemberian_obat.no_rawat
             AND satu_sehat_medicationdispense_new.tgl_perawatan = detail_pemberian_obat.tgl_perawatan
             AND satu_sehat_medicationdispense_new.jam = detail_pemberian_obat.jam
             AND satu_sehat_medicationdispense_new.kode_brng = detail_pemberian_obat.kode_brng
             AND satu_sehat_medicationdispense_new.no_batch = detail_pemberian_obat.no_batch
             AND satu_sehat_medicationdispense_new.no_faktur = detail_pemberian_obat.no_faktur
+        INNER JOIN satu_sehat_medicationrequest_new
+            ON resep_obat.no_resep = satu_sehat_medicationrequest_new.no_resep
+            AND detail_pemberian_obat.kode_brng = satu_sehat_medicationrequest_new.kode_brng
         WHERE reg_periksa.no_rawat = '{$row['no_rawat']}'
         GROUP BY detail_pemberian_obat.kode_brng;
 
@@ -2812,8 +2814,13 @@ $sqlRespi = "
                 }
 
                 // === BUAT PAYLOAD ===
-                 $signa1 = !empty($disp['jml']) ? (float)$med['jml'] : 1; // dosis per kali
-                $signa2 = 1; // frequency, bisa disesuaikan
+                // Contoh aturan "3 x 1" berarti frekuensi 3 kali/hari, dosis 1 per kali.
+                $frekuensi = 1;
+                $dosisPerKali = 1;
+                if (preg_match('/(\d+(?:[.,]\d+)?)\s*[xX]\s*(\d+(?:[.,]\d+)?)/', $aturan, $signa)) {
+                    $frekuensi = max(1, (int)$signa[1]);
+                    $dosisPerKali = (float)str_replace(',', '.', $signa[2]);
+                }
 
 
                 $payloadDisp = [
@@ -2882,7 +2889,7 @@ $sqlRespi = "
                         "text"     => $aturan,
                         "timing" => [
                             "repeat" => [
-                                "frequency" => (int)$signa2,
+                                "frequency" => $frekuensi,
                                 "period"    => 1,
                                 "periodUnit"=> "d"
                             ]
@@ -2899,7 +2906,7 @@ $sqlRespi = "
                         "doseAndRate" => [
                             [
                                 "doseQuantity" => [
-                                    "value"  => (float)$signa1,
+                                    "value"  => $dosisPerKali,
                                     "unit"   => $disp['denominator_code'],
                                     "system" => $disp['denominator_system'],
                                     "code"   => $disp['denominator_code']
