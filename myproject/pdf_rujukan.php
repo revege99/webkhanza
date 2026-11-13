@@ -169,7 +169,7 @@ $pdf->AddPage();
 
 
 // Path gambar logo
-$logo_path = __DIR__ . '/../img/bpjslogo_pdf.jpg';
+$logo_path = dirname(__DIR__) . '/img/bpjslogo_pdf.jpg';
 $logo_paripurna = '../../paripurna.png';
 
 // Gunakan URL lokal jika file tidak ditemukan
